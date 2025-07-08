@@ -4,36 +4,68 @@
     "slug": "IntegratedProject",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/education-logo.png",
     "scheme": "integratedproject",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/education-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "transparent",
+      "dark": {
+        "image": "./assets/images/education-logo.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#121212"
+      }
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "splash": {
+        "image": "./assets/images/education-logo.png",
+        "resizeMode": "contain",
+        "backgroundColor": "transparent",
+        "dark": {
+          "image": "./assets/images/education-logo.png",
+          "resizeMode": "contain",
+          "backgroundColor": "transparent"
+        }
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/education-logo.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "splash": {
+        "ldpi": "./assets/images/education-logo.png",
+        "mdpi": "./assets/images/education-logo.png",
+        "hdpi": "./assets/images/education-logo.png",
+        "xhdpi": "./assets/images/education-logo.png",
+        "xxhdpi": "./assets/images/education-logo.png",
+        "xxxhdpi": "./assets/images/education-logo.png",
+        "resizeMode": "contain",
+        "backgroundColor": "transparent",
+        "dark": {
+          "ldpi": "./assets/images/splash-dark.png",
+          "mdpi": "./assets/images/splash-dark.png",
+          "hdpi": "./assets/images/splash-dark.png",
+          "xhdpi": "./assets/images/splash-dark.png",
+          "xxhdpi": "./assets/images/splash-dark.png",
+          "xxxhdpi": "./assets/images/splash-dark.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#121212"
+        }
+      }
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/education-logo.png"
     },
     "plugins": [
       "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
+      "expo-splash-screen",
+      "expo-barcode-scanner"
     ],
     "experiments": {
       "typedRoutes": true
